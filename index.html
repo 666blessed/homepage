@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
@@ -13,12 +13,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Résumé</title>
   </head>
-  <body>
+  <body class="bg-gradient-to-b from-primary to-secondary">
     <main>
       <div class="theme-change-wrapper">
         <label
           for="my-modal-2"
-          class="btn md:btn-md sm:btn-sm xs:btn-xs btn-primary modal-button mr-4"
+          class="btn md:btn-md sm:btn-sm xs:btn-xs btn-secondary modal-button"
         >
           Choose your color
         </label>
@@ -91,12 +91,7 @@
             >
               🖍 pastel
             </button>
-            <button
-              data-set-theme="wireframe"
-              class="btn btn-outline btn-primary m-3"
-            >
-              📝 wireframe
-            </button>
+
             <button
               data-set-theme="black"
               class="btn btn-outline btn-primary m-3"
@@ -146,12 +141,6 @@
               🐟 aqua
             </button>
             <button
-              data-set-theme="luxury"
-              class="btn btn-outline btn-primary m-3"
-            >
-              💎 luxury
-            </button>
-            <button
               data-set-theme="fantasy"
               class="btn btn-outline btn-primary m-3"
             >
@@ -165,8 +154,12 @@
       </div>
       <div class="resume">
         <div class="container">
-          <div class="resume__block">
-            <h1 class="contact-info__header">Kirill Katkov</h1>
+          <div class="resume__block border-primary">
+            <h1
+              class="contact-info__header text-3xl font-bold text-neutral outline-secondary"
+            >
+              Kirill Katkov
+            </h1>
             <h3 class="contact-info__sub-header">
               Junior (hopefully) Frontend Developer
             </h3>
@@ -176,7 +169,7 @@
                 <a
                   href="https://goo.gl/maps/s5vSDjqvu5wvUsiS9"
                   rel="author"
-                  class="contact-info__item"
+                  class="contact-info__item btn btn-primary"
                   target="_blank"
                 >
                   <div class="contact-info__item-icon-wrapper">
@@ -195,7 +188,7 @@
                 <a
                   href="tel:+380973113207"
                   rel="author"
-                  class="contact-info__item"
+                  class="contact-info__item btn btn-primary"
                 >
                   <div class="contact-info__item-icon-wrapper">
                     <svg
@@ -213,7 +206,7 @@
                 <a
                   href="https://t.me/blessed_x"
                   rel="author"
-                  class="contact-info__item"
+                  class="contact-info__item btn btn-primary"
                   target="_blank"
                 >
                   <div class="contact-info__item-icon-wrapper">
@@ -233,7 +226,7 @@
 
               <div class="contact-info__block contact-info__block--center">
                 <img
-                  class="contact-info__avatar"
+                  class="contact-info__avatar border-primary"
                   src="assets/avatar.png"
                   alt="Avatar"
                 />
@@ -243,7 +236,7 @@
                 <a
                   href="https://www.linkedin.com/in/kirill-katkov/"
                   rel="author"
-                  class="contact-info__item"
+                  class="contact-info__item btn btn-primary"
                   target="_blank"
                 >
                   <div class="contact-info__item-icon-wrapper">
@@ -262,7 +255,7 @@
                 <a
                   href="mailto:katkov.kirill10@gmail.com"
                   rel="author"
-                  class="contact-info__item"
+                  class="contact-info__item btn btn-primary"
                   target="_blank"
                 >
                   <div class="contact-info__item-icon-wrapper">
@@ -281,7 +274,7 @@
                 <a
                   href="https://github.com/666blessed"
                   rel="author"
-                  class="contact-info__item"
+                  class="contact-info__item btn btn-primary"
                   target="_blank"
                 >
                   <div class="contact-info__item-icon-wrapper">
@@ -302,11 +295,11 @@
           </div>
         </div>
         <div class="container">
-          <div class="resume__block">
+          <div class="resume__block border-primary">
             <div class="intro">
               <div class="intro__icon-wrapper">
                 <svg
-                  class="intro__icon"
+                  class="intro__icon fill-neutral-600"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                 >
@@ -315,7 +308,7 @@
                   ></path>
                 </svg>
               </div>
-              <p class="intro_text">
+              <p class="intro_text text-lg">
                 Hey, people call me Kirill :) Making web pages/applications
                 brings me joy. I'm in a constant seek of improving my skills and
                 look forward to exciting projects! Additionally, I like video
@@ -325,9 +318,9 @@
           </div>
         </div>
         <div class="container">
-          <div class="resume__block">
+          <div class="resume__block border-primary">
             <div class="skills">
-              <h3 class="skills__header">Skills</h3>
+              <h3 class="skills__header text-xl font-bold">Skills</h3>
               <p class="skills__text">
                 HTML, CSS, JS, React, C++, C#, Git and a bit of SQL & MongoDB
               </p>
@@ -335,10 +328,12 @@
           </div>
         </div>
         <div class="container">
-          <div class="resume__block">
+          <div class="resume__block border-primary">
             <div class="main-info fh">
               <div class="experiences">
-                <h3 class="experiences__header">Experience</h3>
+                <h3 class="experiences__header text-xl font-bold">
+                  Experience
+                </h3>
                 <div class="experiences__company">
                   <div class="experiences__company-header">
                     <span class="experiences__company-header-durability"
@@ -356,7 +351,9 @@
                     <h3 class="experiences__company-project-name">
                       Internal website/some client projects
                     </h3>
-                    <ul class="experiences__company-project-responsibilities">
+                    <ul
+                      class="experiences__company-project-responsibilities list-disc"
+                    >
                       <li>Maintained website</li>
                       <li>Added new features</li>
                       <li>Fixed bugs</li>
@@ -368,7 +365,11 @@
 
               <div class="additional-info fv">
                 <div class="additional-info__education">
-                  <h3 class="additional-info__education-header">Education</h3>
+                  <h3
+                    class="additional-info__education-header text-xl font-bold"
+                  >
+                    Education
+                  </h3>
                   <div class="additional-info__education-university">
                     <span
                       class="additional-info__education-university-durability"
@@ -386,7 +387,11 @@
                 </div>
 
                 <div class="additional-info__languages">
-                  <h3 class="additional-info__languages-header">Languages</h3>
+                  <h3
+                    class="additional-info__languages-header text-xl font-bold"
+                  >
+                    Languages
+                  </h3>
                   <p class="additional-info__languages-item">English C1</p>
                   <p class="additional-info__languages-item">Polish B2</p>
                   <p class="additional-info__languages-item">
